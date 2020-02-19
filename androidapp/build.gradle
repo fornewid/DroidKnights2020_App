@@ -4,6 +4,7 @@ buildscript {
     dependencies {
         classpath gradlePlugin.android
         classpath gradlePlugin.kotlin
+        classpath gradlePlugin.kotlin_serialization
         classpath gradlePlugin.play_services
     }
 }

@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlinx-serialization'
 apply plugin: "scabbard.gradle"
 
 android {
@@ -41,6 +42,7 @@ scabbard {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation deps.kotlin.stdlib
+    implementation deps.kotlin.serialization
 
     // Jetpack
     implementation deps.androidx.appcompat
